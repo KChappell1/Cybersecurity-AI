@@ -16,7 +16,7 @@ y = dataset["Species"].values
 scaler = StandardScaler().fit(x)
 x = scaler.transform(x)
 
-x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.20)
+x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.80)
 
 model = linear_model.LogisticRegression().fit(x_train, y_train)
 
