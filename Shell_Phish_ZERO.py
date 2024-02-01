@@ -18,5 +18,4 @@ model = linear_model.LogisticRegression().fit(x_train, y_train)
 print("Accuracy:", model.score(x_test, y_test))
 
 print("*************")
-website = input("Enter a website"); 
 
