@@ -1,6 +1,4 @@
-# Importing the required modules 
-import os
-import sys
+# Importing the required modules
 import pandas as pd
 from bs4 import BeautifulSoup
   
