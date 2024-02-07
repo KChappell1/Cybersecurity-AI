@@ -11,7 +11,7 @@ y = dataset["CLASS_LABEL"].values
 scaler = StandardScaler().fit(x)
 x = scaler.transform(x)
 
-x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.80)
+x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.20)
 
 model = linear_model.LogisticRegression().fit(x_train, y_train)
 
@@ -19,3 +19,8 @@ print("Accuracy:", model.score(x_test, y_test))
 
 print("*************")
 
+print("****TEST FOR WRITEUP*****")
+y_pred=int(model.predict([[]]))
+
+print("Predicted Purchased:" ,y_pred ,"Purchased:" , actual)
+print("")
