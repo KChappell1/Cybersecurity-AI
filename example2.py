@@ -3,7 +3,7 @@ from sklearn import linear_model
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 
-data = pd.read_csv("part4-classification/suv_data.csv")
+data = pd.read_csv("suv_data.csv")
 data['Gender'].replace(['Male','Female'],[0,1],inplace=True)
 
 x = data[["Age", "EstimatedSalary", "Gender"]].values
