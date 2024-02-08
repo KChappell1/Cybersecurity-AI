@@ -18,9 +18,3 @@ model = linear_model.LogisticRegression().fit(x_train, y_train)
 print("Accuracy:", model.score(x_test, y_test))
 
 print("*************")
-
-print("****TEST FOR WRITEUP*****")
-y_pred=int(model.predict([[]]))
-
-print("Predicted Purchased:" ,y_pred ,"Purchased:" , actual)
-print("")

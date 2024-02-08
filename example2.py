@@ -55,7 +55,7 @@ for index in range(len(x_test)):
     # print("Predicted Purchased: " + y_pred + " Purchased: " + actual)
     
 print("****TEST FOR WRITEUP*****")
-y_pred=int(model.predict([[34,5600,1 ]]))
+y_pred=int(model.predict([[35,56000,1 ]]))
 
 print("Predicted Purchased:" ,y_pred ,"Purchased:" , actual)
 print("")
