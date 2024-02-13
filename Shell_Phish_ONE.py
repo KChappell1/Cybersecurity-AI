@@ -2,53 +2,84 @@ url = input("Enter a url: ")
 print (url)
 
 NumDots = 0
-SubdomainLevel 
-PathLevel
+for i in url: 
+    if i == ".":
+        NumDots += 1
+print ( NumDots )
+
+
+
+# SubdomainLevel 
+# PathLevel
+
+
+
 UrlLength = 0
+for i in url: 
+    UrlLength += 1
+print ( UrlLength )
+
 NumDash = 0
-NumDashInHostname = 
+for i in url: 
+    if i == "-":
+        NumDash += 1
+print ( NumDash )
+
+
+
+# NumDashInHostname = 
+
+
+
 AtSymbol = 0 
+for i in url: 
+    if i == "@":
+        AtSymbol += 1
+print ( AtSymbol )
+
 TildeSymbol = 0
+for i in url: 
+    if i == ""
 NumUnderscore = 0
 NumPercent = 0 
-NumQueryComponents
-NumAmpersand = 0 
-NumHash = 0 
-NumNumericChars = 0 
-NoHttps = 
-RandomString 
-IpAddress
-DomainInSubdomains
-DomainInPaths
-HttpsInHostname
-HostnameLength,
-PathLength
-QueryLength
-DoubleSlashInPath
-NumSensitiveWords
-EmbeddedBrandName
-PctExtHyperlinks
-PctExtResourceUrls
-ExtFavicon
-InsecureForms
-RelativeFormAction
-ExtFormAction
-AbnormalFormAction
-PctNullSelfRedirectHyperlinks
-FrequentDomainNameMismatch
-FakeLinkInStatusBar
-RightClickDisabled
-PopUpWindow
-SubmitInfoToEmail
-IframeOrFrame
-MissingTitle
-ImagesOnlyInForm
-SubdomainLevelRT
-UrlLengthRT
-PctExtResourceUrlsRT
-AbnormalExtFormActionR
-ExtMetaScriptLinkRT
-PctExtNullSelfRedirectHyperlinksRT
+# NumQueryComponents
+# NumAmpersand = 0 
+# NumHash = 0 
+# NumNumericChars = 0 
+# NoHttps = 
+# RandomString 
+# IpAddress
+# DomainInSubdomains
+# DomainInPaths
+# HttpsInHostname
+# HostnameLength,
+# PathLength
+# QueryLength
+# DoubleSlashInPath
+# NumSensitiveWords
+# EmbeddedBrandName
+# PctExtHyperlinks
+# PctExtResourceUrls
+# ExtFavicon
+# InsecureForms
+# RelativeFormAction
+# ExtFormAction
+# AbnormalFormAction
+# PctNullSelfRedirectHyperlinks
+# FrequentDomainNameMismatch
+# FakeLinkInStatusBar
+# RightClickDisabled
+# PopUpWindow
+# SubmitInfoToEmail
+# IframeOrFrame
+# MissingTitle
+# ImagesOnlyInForm
+# SubdomainLevelRT
+# UrlLengthRT
+# PctExtResourceUrlsRT
+# AbnormalExtFormActionR
+# ExtMetaScriptLinkRT
+# PctExtNullSelfRedirectHyperlinksRT
 
 # import pandas as pd
 # from sklearn.model_selection import train_test_split
