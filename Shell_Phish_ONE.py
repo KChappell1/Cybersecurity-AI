@@ -39,9 +39,22 @@ print ( AtSymbol )
 
 TildeSymbol = 0
 for i in url: 
-    if i == ""
+    if i == "~":
+        TildeSymbol += 1
+print ( TildeSymbol )
+
 NumUnderscore = 0
+for i in url: 
+    if i == "_":
+        NumUnderscore +=1
+print ( NumUnderscore )
+
 NumPercent = 0 
+for i in url: 
+    if i == "%":
+        NumPercent +=1
+print ( NumPercent )
+
 # NumQueryComponents
 # NumAmpersand = 0 
 # NumHash = 0 
