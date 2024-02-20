@@ -46,19 +46,33 @@ print ( TildeSymbol )
 NumUnderscore = 0
 for i in url: 
     if i == "_":
-        NumUnderscore +=1
+        NumUnderscore += 1
 print ( NumUnderscore )
 
 NumPercent = 0 
 for i in url: 
     if i == "%":
-        NumPercent +=1
+        NumPercent += 1
 print ( NumPercent )
 
 # NumQueryComponents
-# NumAmpersand = 0 
-# NumHash = 0 
-# NumNumericChars = 0 
+NumAmpersand = 0 
+for i in url: 
+    if i == "&": 
+        NumAmpersand += 1
+print ( NumAmpersand )
+
+NumHash = 0 
+for i in url: 
+    if i == "#": 
+        NumHash += 1
+print ( NumHash )
+
+NumNumericChars = 0 
+for i in url: 
+    if i in "1234567890": 
+        NumNumericChars += 1
+print ( NumNumericChars )
 # NoHttps = 
 # RandomString 
 # IpAddress
