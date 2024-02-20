@@ -55,7 +55,12 @@ for i in url:
         NumPercent += 1
 print ( NumPercent )
 
+
+
 # NumQueryComponents
+
+
+
 NumAmpersand = 0 
 for i in url: 
     if i == "&": 
