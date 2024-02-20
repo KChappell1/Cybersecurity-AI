@@ -56,24 +56,9 @@ for i in url:
 print ( NumPercent )
 
 # NumQueryComponents
-
-NumAmpersand = 0 
-for i in url: 
-    if i == "&":
-        NumAmpersand += 1
-print ( NumAmpersand )
-
-NumHash = 0 
-for i in url: 
-    if i == "#":
-        NumHash += 1
-print ( NumHash ) 
-
-NumNumericChars = 0 
-for i in url: 
-    if i in "1234567890":
-        NumNumericChars += 1
-print ( NumNumericChars )
+# NumAmpersand = 0 
+# NumHash = 0 
+# NumNumericChars = 0 
 # NoHttps = 
 # RandomString 
 # IpAddress
