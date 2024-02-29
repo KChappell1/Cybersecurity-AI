@@ -1,8 +1,19 @@
-from urlparse import urlparse
+from urllib.parse import urlparse
 
 url = input("Enter a url: ")
+print ( 'url: ' + url )
+comp = urlparse(url)
 
-print (url)
+print ('scheme  :' +  comp.scheme)
+print ('netloc  :' +  comp.netloc)
+print ('path    :' +  comp.path)
+print ('params  :' +  comp.params)
+print ('query   :' +  comp.query)
+print ('fragment:' +  comp.fragment)
+# print ('username:' +  comp.username)
+# print ('password:' +  comp.password)
+print ('hostname:' +  comp.hostname + '(netloc in lower case)')
+# print ('port    :' +  comp.port)
 
 NumDots = 0
 for i in url: 
@@ -10,17 +21,17 @@ for i in url:
         NumDots += 1
 # print ( NumDots )
 
-SubdomainLevel = 0 
-for i in url: 
-    if i == ".":
-        SubdomainLevel += 1
-if SubdomainLevel != 0:
-    SubdomainLevel -= 1
+# SubdomainLevel = 0 
+# for i in url: 
+#     if i == ".":
+#         SubdomainLevel += 1
+# if SubdomainLevel != 0:
+#     SubdomainLevel -= 1
 # print ( SubdomainLevel )
 
 
 
-# PathLevel
+# PathLevel = 
 
 
 
@@ -149,6 +160,16 @@ model = linear_model.LogisticRegression().fit(x_train, y_train)
 print("*************")
 print("Accuracy:", model.score(x_test, y_test))
 print("*************")
+
+# Control: 
+print("****CONTROL****")
+# 2,53,0,0,0,0,0,0,0,4,1
+y_cred=int(model.predict([[2,53,0,0,0,0,0,0,0,4]]))
+if y_cred == 0:
+    y_cred = "Not Phishing"
+else:
+    y_cred = "Phishing"
+print("Control Predicted:" , y_cred)
 
 print("****TEST*****")
 y_pred=int(model.predict([[NumDots, UrlLength, NumDash, AtSymbol, TildeSymbol, NumUnderscore, NumPercent, NumAmpersand, NumHash, NumNumericChars]]))
